@@ -36,7 +36,7 @@ jobs:
           key: ${{ secrets.EC2_SSH_KEY }}
           source: "backend/build/libs/*.jar"  # ✅ 경로 수정
           target: "/home/ubuntu/app"
-          strip_components: 2
+          strip_components: 3
 
       # 5. EC2에서 앱 실행
       - name: Run Spring Boot App on EC2
